@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +39,7 @@
 <body>
 	<h2>파일 첨부형 게시판 - 글쓰기</h2>
 	<form name="writeFrm" method="post" enctype="multipart/form-data" action="../mvcboard/write.do" onsubmit="return validateForm(this)">
-	<table border="1" width="90%" "table table-striped">
+	<table border="1" width="90%" class="table table-striped">
 		<tr>
 			<td>작성자</td>
 			<td><input type="text" name="name" style="width:150px;" /></td>	

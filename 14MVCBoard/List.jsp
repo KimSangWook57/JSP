@@ -36,7 +36,7 @@
 	<!-- 목록창 -->
 	
 	<table border="1" width="90%" class="table table-striped">
-	<tr>
+	<tr align="center">
 		<th width="10%">번호</th>
 		<th width="*">제목</th>
 		<th width="15%">작성자</th>
@@ -59,7 +59,7 @@
 				${ map.totalCount - (((map.pageNum - 1) * map.pageSize) + loop.index)}
 			</td>
 			<td align="left"> 	<!-- 제목(링크) -->
-				<a href="../mvcboard/wiew.do?idx=${ row.idx }">${ row.title }</a>
+				<a href="../mvcboard/view.do?idx=${ row.idx }">${ row.title }</a>
 			</td>
 			<td>${ row.name }</td> 			<!-- 작성자 -->
 			<td>${ row.visitcount }</td> 	<!-- 조회수 -->
@@ -81,7 +81,7 @@
 			<td>
 				${ map.pagingImg }
 			</td>
-			<td width="100"><button type="button" onclick="loaction.href='../mvcboard/write.do';">글쓰기</button></td>
+			<td width="100"><button type="button" onclick="location.href='../mvcboard/write.do';">글쓰기</button></td>
 		</tr>
 	</table>
 </body>
